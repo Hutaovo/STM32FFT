@@ -32,7 +32,7 @@ I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
 I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
 I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
 I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
-F (.\main.c)(0x69C00D26)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\USER -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HARDWARE\LED -I ..\HARDWARE\ADC -I ..\HARDWARE\KEYIN -I ..\HARDWARE\EXTI -I ..\HARDWARE\TIMER -I ..\HARDWARE\ITEMP -I ..\HARDWARE\FFT -I ..\HARDWARE\LCD-I.\RTE\_Target_1-IC:\MyApps\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\MyApps\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
+F (.\main.c)(0x69C00D9C)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\USER -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HARDWARE\LED -I ..\HARDWARE\ADC -I ..\HARDWARE\KEYIN -I ..\HARDWARE\EXTI -I ..\HARDWARE\TIMER -I ..\HARDWARE\ITEMP -I ..\HARDWARE\FFT -I ..\HARDWARE\LCD-I.\RTE\_Target_1-IC:\MyApps\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\MyApps\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
 I (..\SYSTEM\sys\sys.h)(0x69BD1512)
 I (..\USER\stm32f10x.h)(0x5BC97917)
 I (..\CORE\core_cm3.h)(0x4D523B58)

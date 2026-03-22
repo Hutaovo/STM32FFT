@@ -1,0 +1,62 @@
+# Keil MDK-ARM 编译输出
+*.uvguix.*
+*.bak
+*.ddk
+*.edk
+*.lst
+*.lnp
+*.mpf
+*.mpj
+*.obj
+*.omf
+*.plg
+*.rpt
+*.tmp
+*.__i
+*._ia
+*.crf
+*.d
+*.axf
+*.tra
+*.htm
+*.sct
+*.build_log.htm
+
+# Keil 编译目录
+Objects/
+Listings/
+RTE/
+DebugConfig/
+EventRecorderStub.scvd
+
+# Keil 项目备份
+*.uvguix
+*.uvopt
+*.uvproj.bak
+*.uvproj.saved_*
+
+# 编译生成的二进制文件
+*.bin
+*.hex
+*.elf
+*.map
+*.lib
+*.a
+
+# 调试文件
+*.dbgconf
+*.ini
+JLinkLog.txt
+JLinkSettings.ini
+
+# 临时文件
+*~
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# IDE 配置
+.vscode/
+.idea/
+*.code-workspace
