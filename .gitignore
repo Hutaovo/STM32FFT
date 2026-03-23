@@ -24,6 +24,7 @@
 
 # Keil 编译目录
 Objects/
+OBJ/
 Listings/
 RTE/
 DebugConfig/
@@ -42,6 +43,7 @@ EventRecorderStub.scvd
 *.map
 *.lib
 *.a
+*.o
 
 # 调试文件
 *.dbgconf
