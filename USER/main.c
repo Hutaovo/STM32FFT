@@ -90,6 +90,7 @@ int main(void)
     LCD_ShowString(116, 16, "fsc:", WHITE, BLACK, 16, 0);
     LCD_ShowIntNum(32, 16, fra, 5, RED, BLACK, 16);
     LCD_ShowIntNum(148, 16, fsc, 3, RED, BLACK, 16);
+    LCD_ShowString(0, 32, "dB :", WHITE, BLACK, 16, 0);
 
     TIM2_PWM_Init(1406, fa - 1);
     ADC_DMA1_Config(DMA1_Channel1, (uint32_t)&ADC1->DR, (uint32_t)&Adc_12bit, N);
@@ -142,6 +143,12 @@ int main(void)
         {
             LCD_ShowIntNum(32, 16, fra, 5, RED, BLACK, 16);
             LCD_ShowIntNum(148, 16, fsc, 3, RED, BLACK, 16);
+        }
+        {
+            double dB_val = 0;
+            if (aMax > 0)
+                dB_val = 20 * log10(aMax) + 10;
+            LCD_ShowIntNum(40, 32, (u16)dB_val, 3, RED, BLACK, 16);
         }
     }
 }
