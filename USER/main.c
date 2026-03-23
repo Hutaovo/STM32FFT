@@ -145,10 +145,17 @@ int main(void)
             LCD_ShowIntNum(148, 16, fsc, 3, RED, BLACK, 16);
         }
         {
-            double dB_val = 0;
-            if (aMax > 0)
-                dB_val = 20 * log10(aMax) + 10;
-            LCD_ShowIntNum(40, 32, (u16)dB_val, 3, RED, BLACK, 16);
+            u16 dB_val = 0;
+            if (aMax > 1)
+            {
+                u16 temp = (u16)aMax;
+                while (temp > 1)
+                {
+                    temp >>= 1;
+                    dB_val += 6;
+                }
+            }
+            LCD_ShowIntNum(40, 32, dB_val, 3, RED, BLACK, 16);
         }
     }
 }
