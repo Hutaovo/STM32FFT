@@ -121,7 +121,7 @@ int main(void)
 
         aMax = 0.0;
         nMax = 0;
-        for (s = 0; s < N / 2 - 1; s++)
+        for (s = 0; s < N / 2 - 1; s++) // 遍历前80个频率点，寻找最大幅值并计算柱状图高度
         {
             if (Compx[s + 1].real > aMax)
             {
