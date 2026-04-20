@@ -181,14 +181,14 @@ void Get_Result(struct compx *xin)
  * @param   n   数据点数
  * @return  无(原地修改xin数组)
  */
-void Hanning_Window(struct compx *xin, int n)
+void Hanning_Window(struct compx *xin, int n) // 汉宁窗函数
 {
 	int i;
 	double w;
-	for (i = 0; i < n; i++)
+	for (i = 0; i < n; i++) // 遍历所有数据点
 	{
-		w = 0.5 * (1 - cos(PI2 * i / (n - 1)));
-		xin[i].real = xin[i].real * w;
+		w = 0.5 * (1 - cos(PI2 * i / (n - 1))); // 计算汉宁窗权重
+		xin[i].real = xin[i].real * w; // 加窗处理，修改xin[i].的实部
 	}
 }
 
