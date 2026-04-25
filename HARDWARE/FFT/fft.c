@@ -1,4 +1,4 @@
-/**
+/* 
  * @file    fft.c
  * @brief   快速傅里叶变换(FFT)实现
  * @details 实现512点FFT算法，包括:
@@ -42,7 +42,7 @@ void create_sin_tab(float *sin_t)
  */
 float sin_tab(int n)
 {
-	if (n > FFT_N / 4) 
+	if (n > FFT_N / 4) // 如果n超过1/4周期，利用对称性关系将n映射到0~FFT_N/4范围内 
 	{
 		n = FFT_N / 2 - n; // 对称性关系，将n映射到0~FFT_N/4-1范围内
 	}

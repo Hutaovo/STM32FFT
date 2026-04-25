@@ -61,4 +61,9 @@ Thumbs.db
 # IDE 配置
 .vscode/
 .idea/
+.github/
 *.code-workspace
+
+# 其他资料
+资料/
+参考/
